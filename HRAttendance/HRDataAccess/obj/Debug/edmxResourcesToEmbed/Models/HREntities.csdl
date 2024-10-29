@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="ConfigKey" />
+    </Key>
+    <Property Name="ConfigKey" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IntValue" Type="Int32" />
+    <Property Name="StrVal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FloatVal" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="HRDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Settings" EntityType="Self.Setting" />
+    <EntitySet Name="Employees" EntityType="Models.Employee" />
+    <EntitySet Name="Users" EntityType="Models.User" />
+    <AssociationSet Name="FK_Users_Employees" Association="Models.FK_Users_Employees">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NRC" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="Byte" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Terminated" Type="Boolean" />
+    <Property Name="DelFlg" Type="Int32" />
+    <Property Name="RegistDateTime" Type="DateTime" Precision="3" />
+    <Property Name="DeleteDateTime" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdateUserID" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="Models.FK_Users_Employees" FromRole="Employee" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdatePasswordDateTime" Type="DateTime" Precision="3" />
+    <Property Name="LastLoginDateTime" Type="DateTime" Precision="3" />
+    <Property Name="DelFlg" Type="Int32" />
+    <Property Name="DeleteDateTime" Type="DateTime" Precision="3" />
+    <Property Name="DeleteUserID" Type="Int32" />
+    <NavigationProperty Name="Employee" Relationship="Models.FK_Users_Employees" FromRole="User" ToRole="Employee" />
+  </EntityType>
+  <Association Name="FK_Users_Employees">
+    <End Type="Models.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="Models.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

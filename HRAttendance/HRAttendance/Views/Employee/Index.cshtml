@@ -1,0 +1,29 @@
+﻿@model IEnumerable<HRAttendance.Models.Employee.EmployeeInfo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Company</h4>
+<hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+            <button class="btn btn-sm btn-outline-primary" id="BT_Employee_Register">Register</button>
+            <button class="btn btn-sm btn-outline-secondary" id="BT_Employee_Refresh">Refresh</button>
+        </div>
+    </div>
+    <div class="row" style="padding-top : 1rem;">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" id="GridviewEmployeeListViewHolder">
+            @Html.Partial("~/Views/Employee/_GridviewEmployeeListView.cshtml", Model)
+        </div>
+    </div>
+
+</div>
+
+@section scripts{
+    <script>
+        employeeListView.Initialize();
+    </script>
+}

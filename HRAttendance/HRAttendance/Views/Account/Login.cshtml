@@ -1,0 +1,54 @@
+﻿@model HRAttendance.Models.Account.LoginUserInfo
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-10 col-lg-10 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                     class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-4 offset-xl-1">
+                <h5 class="text-info">Login to the application</h5>
+                <hr />
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user-circle"></i></span>
+                            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control login-input form-control-lg custom-form-control", aria_describedby = "basic-addon-1", @placeholder = "Enter User ID", @required = true })
+                        </div>
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon-2"><i class="fa fa-eye-slash"></i></span>
+                            @Html.PasswordFor(model => model.Password, new { @class = "form-control login-input form-control-lg custom-form-control", aria_describedby = "basic-addon-2", @placeholder = "Enter Password", @required = true })
+
+                        </div>
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group submit-button-group">
+                        <button class="btn btn-primary btn-lg btn-login">Login <i class="fa fa-sign-in"></i></button>
+                    </div>
+
+                    <p class="text-danger">@TempData["InvalidLogin"]</p>
+
+                    //Clear Temp Data
+                    TempData.Clear();
+
+                }
+            </div>
+        </div>
+    </div>
+    
+</section>
+

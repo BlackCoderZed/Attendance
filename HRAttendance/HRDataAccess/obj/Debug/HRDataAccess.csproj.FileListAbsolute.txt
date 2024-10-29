@@ -1,0 +1,14 @@
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\HRDataAccess.dll.config
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\HRDataAccess.dll
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\HRDataAccess.pdb
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\HRCommon.dll
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\HRCommon.pdb
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\obj\Debug\HRDataAccess.csproj.AssemblyReference.cache
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\obj\Debug\HRDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\obj\Debug\HRDataAc.AC0C1A01.Up2Date
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\obj\Debug\HRDataAccess.dll
+C:\Users\saiau\source\repos\HRAttendance\HRDataAccess\obj\Debug\HRDataAccess.pdb

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - HR Attendance</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="bg-gradient">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">HR Attendance</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse right" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    @*<li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home")">Home</a>
+                        </li>*@
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item dropdown" style="justify-self: end;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdminMGMT" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @{
+                                    HRAttendance.Models.Account.LoginUserInfo obj = Session[HRAttendance.Utils.Constants.SESSION_WEB_LOGIN_INFO] as HRAttendance.Models.Account.LoginUserInfo;
+                                    if (obj != null)
+                                    {
+                                        @obj.UserDlpName
+                                    }
+                                }
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdminMGMT">
+                                <li><a class="dropdown-item" href="@Url.Action("ChangePassword", "User")">@HRAttendance.Resources.Common.Common.LB_ChangePassword</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Logout", "Account")">@HRAttendance.Resources.Common.Common.LB_Logout</a></li>
+                            </ul>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid body-content">
+        @RenderBody()
+    </div>
+
+    <div id="DialogContainer"></div>
+
+    <footer class="footer-bs">
+        <div class="container-fluid">
+            <hr />
+            <div style="float:right">
+                <label>&copy; @DateTime.Now.Year - IT-Solution</label>
+            </div>
+
+        </div>
+    </footer>
+
+    @Html.Partial("~/Views/Shared/_JSResourcesPartialView.cshtml")
+    @Scripts.Render("~/bundles/commonLibs")
+    @Scripts.Render("~/bundles/operationLibs")
+    <script>
+        commonUtil.AppRootDir = "@HttpRuntime.AppDomainAppVirtualPath";
+
+        if (commonUtil.AppRootDir === '/') {
+            commonUtil.AppRootDir = '';
+        }
+
+        //console.log(commonUtil.AppRootDir);
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

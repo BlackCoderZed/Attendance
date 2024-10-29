@@ -1,0 +1,102 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5%;
+    padding-top: 3rem;
+}
+
+content {
+    padding-top: 10px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+.custom-form-control {
+    border: 1px solid #e3ecef;
+}
+
+.btn-login {
+    width: 100%;
+}
+
+.login-form-group {
+    margin-top: 1rem;
+}
+
+.submit-button-group {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+nav {
+    padding-bottom: 3rem;
+}
+
+.footer-bs {
+    margin-top: 50px;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+
+.home-icon {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #e3ecef;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+figure {
+    align-items: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
