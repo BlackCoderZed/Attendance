@@ -13,9 +13,17 @@
     <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Terminated" Type="bit" />
     <Property Name="DelFlg" Type="int" />
-    <Property Name="RegistDateTime" Type="datetime" />
+    <Property Name="RegistDateTime" Type="datetime" Nullable="false" />
     <Property Name="DeleteDateTime" Type="datetime" />
     <Property Name="LastUpdateUserID" Type="int" />
+    <Property Name="LastUpdateDateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Permissions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Permissions" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Settings">
     <Key>
@@ -31,7 +39,7 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UserID" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
     <Property Name="EmployeeID" Type="int" Nullable="false" />
     <Property Name="LastUpdatePasswordDateTime" Type="datetime" />
@@ -39,6 +47,14 @@
     <Property Name="DelFlg" Type="int" />
     <Property Name="DeleteDateTime" Type="datetime" />
     <Property Name="DeleteUserID" Type="int" />
+  </EntityType>
+  <EntityType Name="UsersPermissions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="PermissionID" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_Users_Employees">
     <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
@@ -52,13 +68,47 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_UsersPermissions_Permissions">
+    <End Role="Permissions" Type="Self.Permissions" Multiplicity="1" />
+    <End Role="UsersPermissions" Type="Self.UsersPermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permissions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UsersPermissions">
+        <PropertyRef Name="PermissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersPermissions_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UsersPermissions" Type="Self.UsersPermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UsersPermissions">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="ModelsStoreContainer">
     <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Permissions" EntityType="Self.Permissions" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Settings" EntityType="Self.Settings" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsersPermissions" EntityType="Self.UsersPermissions" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Users_Employees" Association="Self.FK_Users_Employees">
       <End Role="Employees" EntitySet="Employees" />
       <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersPermissions_Permissions" Association="Self.FK_UsersPermissions_Permissions">
+      <End Role="Permissions" EntitySet="Permissions" />
+      <End Role="UsersPermissions" EntitySet="UsersPermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersPermissions_Users" Association="Self.FK_UsersPermissions_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UsersPermissions" EntitySet="UsersPermissions" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -135,4 +135,13 @@
   <data name="LB_Reset" xml:space="preserve">
     <value>Reset</value>
   </data>
+  <data name="LB_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="LB_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="LB_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
 </root>

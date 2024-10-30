@@ -18,9 +18,17 @@
           <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Terminated" Type="bit" />
           <Property Name="DelFlg" Type="int" />
-          <Property Name="RegistDateTime" Type="datetime" />
+          <Property Name="RegistDateTime" Type="datetime" Nullable="false" />
           <Property Name="DeleteDateTime" Type="datetime" />
           <Property Name="LastUpdateUserID" Type="int" />
+          <Property Name="LastUpdateDateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Permissions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Permissions" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Settings">
           <Key>
@@ -36,7 +44,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="UserID" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
           <Property Name="EmployeeID" Type="int" Nullable="false" />
           <Property Name="LastUpdatePasswordDateTime" Type="datetime" />
@@ -44,6 +52,14 @@
           <Property Name="DelFlg" Type="int" />
           <Property Name="DeleteDateTime" Type="datetime" />
           <Property Name="DeleteUserID" Type="int" />
+        </EntityType>
+        <EntityType Name="UsersPermissions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="PermissionID" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_Users_Employees">
           <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
@@ -57,13 +73,47 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_UsersPermissions_Permissions">
+          <End Role="Permissions" Type="Self.Permissions" Multiplicity="1" />
+          <End Role="UsersPermissions" Type="Self.UsersPermissions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permissions">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UsersPermissions">
+              <PropertyRef Name="PermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsersPermissions_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="UsersPermissions" Type="Self.UsersPermissions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UsersPermissions">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="ModelsStoreContainer">
           <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Permissions" EntityType="Self.Permissions" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Settings" EntityType="Self.Settings" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsersPermissions" EntityType="Self.UsersPermissions" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Users_Employees" Association="Self.FK_Users_Employees">
             <End Role="Employees" EntitySet="Employees" />
             <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersPermissions_Permissions" Association="Self.FK_UsersPermissions_Permissions">
+            <End Role="Permissions" EntitySet="Permissions" />
+            <End Role="UsersPermissions" EntitySet="UsersPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersPermissions_Users" Association="Self.FK_UsersPermissions_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UsersPermissions" EntitySet="UsersPermissions" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -82,10 +132,20 @@
         <EntityContainer Name="HRDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Settings" EntityType="Self.Setting" />
           <EntitySet Name="Employees" EntityType="Models.Employee" />
+          <EntitySet Name="Permissions" EntityType="Models.Permission" />
+          <EntitySet Name="UsersPermissions" EntityType="Models.UsersPermission" />
+          <AssociationSet Name="FK_UsersPermissions_Permissions" Association="Models.FK_UsersPermissions_Permissions">
+            <End Role="Permission" EntitySet="Permissions" />
+            <End Role="UsersPermission" EntitySet="UsersPermissions" />
+          </AssociationSet>
           <EntitySet Name="Users" EntityType="Models.User" />
           <AssociationSet Name="FK_Users_Employees" Association="Models.FK_Users_Employees">
             <End Role="Employee" EntitySet="Employees" />
             <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersPermissions_Users" Association="Models.FK_UsersPermissions_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UsersPermission" EntitySet="UsersPermissions" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Employee">
@@ -101,17 +161,48 @@
           <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Terminated" Type="Boolean" />
           <Property Name="DelFlg" Type="Int32" />
-          <Property Name="RegistDateTime" Type="DateTime" Precision="3" />
+          <Property Name="RegistDateTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DeleteDateTime" Type="DateTime" Precision="3" />
           <Property Name="LastUpdateUserID" Type="Int32" />
+          <Property Name="LastUpdateDateTime" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Users" Relationship="Models.FK_Users_Employees" FromRole="Employee" ToRole="User" />
         </EntityType>
+        <EntityType Name="Permission">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Permissions" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="UsersPermissions" Relationship="Models.FK_UsersPermissions_Permissions" FromRole="Permission" ToRole="UsersPermission" />
+        </EntityType>
+        <EntityType Name="UsersPermission">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="PermissionID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Permission" Relationship="Models.FK_UsersPermissions_Permissions" FromRole="UsersPermission" ToRole="Permission" />
+          <NavigationProperty Name="User" Relationship="Models.FK_UsersPermissions_Users" FromRole="UsersPermission" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_UsersPermissions_Permissions">
+          <End Type="Models.Permission" Role="Permission" Multiplicity="1" />
+          <End Type="Models.UsersPermission" Role="UsersPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permission">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UsersPermission">
+              <PropertyRef Name="PermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityType Name="User">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="UserID" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="EmployeeID" Type="Int32" Nullable="false" />
           <Property Name="LastUpdatePasswordDateTime" Type="DateTime" Precision="3" />
@@ -120,6 +211,7 @@
           <Property Name="DeleteDateTime" Type="DateTime" Precision="3" />
           <Property Name="DeleteUserID" Type="Int32" />
           <NavigationProperty Name="Employee" Relationship="Models.FK_Users_Employees" FromRole="User" ToRole="Employee" />
+          <NavigationProperty Name="UsersPermissions" Relationship="Models.FK_UsersPermissions_Users" FromRole="User" ToRole="UsersPermission" />
         </EntityType>
         <Association Name="FK_Users_Employees">
           <End Type="Models.Employee" Role="Employee" Multiplicity="1" />
@@ -130,6 +222,18 @@
             </Principal>
             <Dependent Role="User">
               <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsersPermissions_Users">
+          <End Type="Models.User" Role="User" Multiplicity="1" />
+          <End Type="Models.UsersPermission" Role="UsersPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UsersPermission">
+              <PropertyRef Name="UserID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -152,6 +256,7 @@
           <EntitySetMapping Name="Employees">
             <EntityTypeMapping TypeName="Models.Employee">
               <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="LastUpdateDateTime" ColumnName="LastUpdateDateTime" />
                 <ScalarProperty Name="LastUpdateUserID" ColumnName="LastUpdateUserID" />
                 <ScalarProperty Name="DeleteDateTime" ColumnName="DeleteDateTime" />
                 <ScalarProperty Name="RegistDateTime" ColumnName="RegistDateTime" />
@@ -163,6 +268,23 @@
                 <ScalarProperty Name="Gender" ColumnName="Gender" />
                 <ScalarProperty Name="NRC" ColumnName="NRC" />
                 <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Permissions">
+            <EntityTypeMapping TypeName="Models.Permission">
+              <MappingFragment StoreEntitySet="Permissions">
+                <ScalarProperty Name="Permissions" ColumnName="Permissions" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsersPermissions">
+            <EntityTypeMapping TypeName="Models.UsersPermission">
+              <MappingFragment StoreEntitySet="UsersPermissions">
+                <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -64,6 +64,7 @@
     <Compile Include="Models\Employee.cs">
       <DependentUpon>HREntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmployeeModels\CreateEmployeeDBInfo.cs" />
     <Compile Include="Models\EmployeeModels\EmployeeDBInfo.cs" />
     <Compile Include="Models\HREntities.Context.cs">
       <AutoGen>True</AutoGen>
@@ -80,10 +81,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HREntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Permission.cs">
+      <DependentUpon>HREntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Setting.cs">
       <DependentUpon>HREntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
+      <DependentUpon>HREntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsersPermission.cs">
       <DependentUpon>HREntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

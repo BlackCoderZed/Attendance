@@ -64,5 +64,23 @@ namespace HRAttendance.Controllers
             LoginUserInfo = response.LoginUserInfo;
             return RedirectToAction("Index", "Home");
         }
+
+        [Authorize]
+        public ActionResult Logout()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                FormsAuthentication.SignOut();
+            }
+
+            if (GetLoginUserInfo() != null)
+            {
+                // clear session
+                Session.Clear();
+                Session.Abandon();
+            }
+
+            return RedirectToAction("Login", "Account");
+        }
     }
 }

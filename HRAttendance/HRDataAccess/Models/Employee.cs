@@ -32,6 +32,7 @@ namespace HRDataAccess.Models
         public System.DateTime RegistDateTime { get; set; }
         public Nullable<System.DateTime> DeleteDateTime { get; set; }
         public Nullable<int> LastUpdateUserID { get; set; }
+        public Nullable<System.DateTime> LastUpdateDateTime { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> Users { get; set; }

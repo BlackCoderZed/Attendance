@@ -24,7 +24,7 @@ namespace HRDataAccess.Models
         {
 
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -32,6 +32,8 @@ namespace HRDataAccess.Models
     
         public virtual DbSet<Setting> Settings { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Permission> Permissions { get; set; }
+        public virtual DbSet<UsersPermission> UsersPermissions { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

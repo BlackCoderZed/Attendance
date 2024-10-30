@@ -102,3 +102,50 @@ var CommonUtil = function () {
 }
 
 var commonUtil = new CommonUtil();
+
+var BaseDlg = function (name) {
+	this.name = name;
+
+	this.GetName = function () {
+		return name;
+	};
+
+	this.GetDivID = function () {
+		return name + 'Holder';
+	};
+
+	this.AddDiv = function () {
+		$("<div id='" + name + 'Holder' + "'></div>").appendTo('#DialogContainer');
+	}
+
+	this.RemoveDiv = function () {
+		$('#' + name + 'Holder').remove();
+	};
+
+	this.GetContentID = function () {
+		return name + 'Content';
+	};
+
+	this.SetContentID = function () {
+		var contentDiv = $('#' + name + 'Holder .modal-content');
+		contentDiv.attr('id', name + 'Content');
+	};
+}
+
+CommonUtil.ValidateForTextInputRequired = function (id, trim) {
+	// trim set by default to true
+	if (trim === undefined) {
+		trim = true;
+	}
+
+	var value = $(id).val();
+	if (trim === true) {
+		value = $.trim(value);
+	}
+
+	if (value === '') {
+		$(id).focus();
+		return false;
+	}
+	return true;
+};

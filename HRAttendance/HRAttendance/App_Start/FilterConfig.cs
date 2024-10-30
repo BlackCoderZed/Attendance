@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using HRAttendance.Utils;
+using System.Web;
 using System.Web.Mvc;
 
 namespace HRAttendance
@@ -8,6 +9,7 @@ namespace HRAttendance
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new SecurityHandler());
         }
     }
 }

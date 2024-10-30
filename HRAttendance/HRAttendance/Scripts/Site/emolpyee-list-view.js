@@ -4,7 +4,7 @@
         InitializeGridview();
 
         $('#BT_Employee_Register').on('click', function () {
-            ShowRegDlg(false, null);
+            ShowRegDlg(false, 0);
         });
 
         $('#BT_Employee_Refresh').on('click', function () {
@@ -71,7 +71,8 @@
         });
 
         $('#GridviewEmployeeList').on('click', '.employee-delete', function () {
-
+            var employeeId = $(this).data('employeeid');
+            Delete(employeeId);
         });
     }
 
@@ -80,7 +81,43 @@
     }
 
     var ShowRegDlg = function (isUpdate, employeeId) {
+        var param = {
+            isUpdate: isUpdate,
+            employeeId: employeeId
+        }
 
+        employeeRegDlg.Show(param);
+    }
+
+    var Delete = function (employeeId) {
+        bootbox.confirm("Are you sure you want to delete?", function (result) {
+            if (result === true) {
+                DeleteEmployee(employeeId);
+            } else {
+                return;
+            }
+        })
+    }
+
+    var DeleteEmployee = function (param) {
+        var togo = commonUtil.AppRootDir + '/Employee/Delete';
+        uiBlocker.showUIBlocker("Loading...");
+
+        var model = { id: param };
+
+        $.ajax({
+            url: togo,
+            type: 'POST',
+            data: model,
+            success: function (response) {
+                uiBlocker.hideUIBlocker();
+                if (commonUtil.HandleResponseError(response) === false) {
+                    // do nothing
+                }
+
+                Refresh();
+            }
+        });
     }
 
     var Refresh = function () {

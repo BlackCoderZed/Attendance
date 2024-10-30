@@ -1,0 +1,145 @@
+﻿@model HRAttendance.Models.Employee.Request.EmployeeCreateInfo
+
+<div class="modal fade" id="EmployeeRegisterDlg" role="dialog" tabindex="-1" data-bs-dropback="static" aria-hidden="true" aria-labelledby="EmployeeRegisterDlg">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@HRAttendance.Resources.Employee.EmployeeRex.LB_EMP_REG</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body from-group required">
+                @Html.HiddenFor(Model => Model.ID)
+                @Html.HiddenFor(Model => Model.IsUpdate)
+                @Html.HiddenFor(Model => Model.UserIDVal)
+
+                <!--Tabs-->
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs" id="employeeTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">General Info</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="account-tab" data-bs-toggle="tab" data-bs-target="#account" type="button" role="tab" aria-controls="account" aria-selected="false">Account Info</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content mt-3" id="employeeTabContent">
+                    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.Name)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.TextBoxFor(Model => Model.Name, new { @class = "form-control", maxlength = 50 })
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.NRC)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.TextBoxFor(Model => Model.NRC, new { @class = "form-control", maxlength = 50 })
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.Gender)
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.RadioButtonFor(Model => Model.Gender, 0, new { @id = "Gender_Male" }) @Html.Label(HRAttendance.Resources.Employee.EmployeeRex.LB_Male, new { @class = "control-lable", @for = "Gender_Male" })
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.RadioButtonFor(Model => Model.Gender, 1, new { @id = "Gender_Female" }) @Html.Label(HRAttendance.Resources.Employee.EmployeeRex.LB_Female, new { @class = "control-lable", @for = "Gender_Female" })
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.Phone)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.TextBoxFor(Model => Model.Phone, new { @class = "form-control", maxlength = 15 })
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.Email)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.TextBoxFor(Model => Model.Email, new { @class = "form-control", maxlength = 50 })
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.Address)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.TextAreaFor(Model => Model.Address, 5, 5, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="account" class="tab-pane fade show">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.UserID)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.TextBoxFor(Model => Model.UserID, new { @class = "form-control", maxlength = 20 })
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.Password)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @if (Model.IsUpdate)
+                                {
+                                    <button id="btnReset" class="btn btn-warning btn-sm">@HRAttendance.Resources.Common.Common.LB_Reset</button>
+                                }
+                                else
+                                {
+                                    @Html.PasswordFor(Model => Model.Password, new { @class = "form-control", maxlength = 50 })
+                                }
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.Label(HRAttendance.Resources.Employee.EmployeeRex.LB_Permission)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.CheckBoxFor(Model => Model.IsManagementPermission)
+                                @Html.LabelFor(model => model.IsManagementPermission)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnEmpRegister" class="btn btn-primary btn-sm">@HRAttendance.Resources.Common.Common.LB_Register</button>
+                <button id="Close" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">@HRAttendance.Resources.Common.Common.LB_Close</button>
+            </div>
+        </div>
+    </div>
+</div>

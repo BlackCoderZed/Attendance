@@ -70,6 +70,15 @@ namespace HRAttendance.Resources.Common {
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string LB_Close {
+            get {
+                return ResourceManager.GetString("LB_Close", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to Delete.
         /// </summary>
         public static string LB_Delete {
@@ -84,6 +93,24 @@ namespace HRAttendance.Resources.Common {
         public static string LB_Logout {
             get {
                 return ResourceManager.GetString("LB_Logout", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh.
+        /// </summary>
+        public static string LB_Refresh {
+            get {
+                return ResourceManager.GetString("LB_Refresh", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string LB_Register {
+            get {
+                return ResourceManager.GetString("LB_Register", resourceCulture);
             }
         }
 

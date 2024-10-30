@@ -134,6 +134,10 @@
     <Compile Include="Models\Common\Result.cs" />
     <Compile Include="Models\Common\ResultBase.cs" />
     <Compile Include="Models\Employee\EmployeeInfo.cs" />
+    <Compile Include="Models\Employee\Request\EmployeeCreateInfo.cs" />
+    <Compile Include="Models\Employee\Response\ResCreateEmployeeInfo.cs" />
+    <Compile Include="Models\Employee\Response\ResDeleteEmployeeInfo.cs" />
+    <Compile Include="Models\Employee\Response\ResGetEmployeeInfocs.cs" />
     <Compile Include="Models\Employee\Response\ResGetEmployeeInfoList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Common\Common.Designer.cs">
@@ -146,6 +150,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CommonMessage.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Employee\EmployeeRex.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeRex.resx</DependentUpon>
+    </Compile>
     <Compile Include="Services\AccountServices.cs" />
     <Compile Include="Services\BaseServices.cs" />
     <Compile Include="Services\EmployeeServices.cs" />
@@ -154,6 +163,8 @@
     <Compile Include="Utils\DataAccessHelper.cs" />
     <Compile Include="Utils\ModelConverter.cs" />
     <Compile Include="Utils\ModelValidator.cs" />
+    <Compile Include="Utils\MvcHelper.cs" />
+    <Compile Include="Utils\SecurityHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\DBConfig.xml" />
@@ -387,6 +398,12 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootbox.all.js" />
+    <Content Include="Scripts\bootbox.all.min.js" />
+    <Content Include="Scripts\bootbox.js" />
+    <Content Include="Scripts\bootbox.locales.js" />
+    <Content Include="Scripts\bootbox.locales.min.js" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -496,6 +513,7 @@
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\Site\common.js" />
     <Content Include="Scripts\Site\emolpyee-list-view.js" />
+    <Content Include="Scripts\Site\employee-reg-dlg.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -512,6 +530,7 @@
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\_GridviewEmployeeListView.cshtml" />
     <Content Include="Views\Shared\_JSResourcesPartialView.cshtml" />
+    <Content Include="Views\Employee\EmployeeRegisterDlg.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Base\" />
@@ -561,6 +580,10 @@
     <EmbeddedResource Include="Resources\Common\CommonMessage.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonMessage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Employee\EmployeeRex.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeRex.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

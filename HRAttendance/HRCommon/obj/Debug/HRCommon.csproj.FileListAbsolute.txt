@@ -4,3 +4,9 @@ C:\Users\saiau\source\repos\HRAttendance\HRCommon\obj\Debug\HRCommon.csproj.Asse
 C:\Users\saiau\source\repos\HRAttendance\HRCommon\obj\Debug\HRCommon.csproj.CoreCompileInputs.cache
 C:\Users\saiau\source\repos\HRAttendance\HRCommon\obj\Debug\HRCommon.dll
 C:\Users\saiau\source\repos\HRAttendance\HRCommon\obj\Debug\HRCommon.pdb
+C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRCommon\bin\Debug\HRCommon.dll
+C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRCommon\bin\Debug\HRCommon.pdb
+C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRCommon\obj\Debug\HRCommon.csproj.AssemblyReference.cache
+C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRCommon\obj\Debug\HRCommon.csproj.CoreCompileInputs.cache
+C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRCommon\obj\Debug\HRCommon.dll
+C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRCommon\obj\Debug\HRCommon.pdb

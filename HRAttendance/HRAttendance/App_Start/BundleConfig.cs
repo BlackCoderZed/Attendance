@@ -10,7 +10,8 @@ namespace HRAttendance
         {
             bundles.Add(new Bundle("~/bundles/commonLibs").Include(
                 "~/Scripts/jquery-{version}.js",
-                "~/Scripts/modernizr-*",
+                "~/Scripts/bootbox.js",
+                //"~/Scripts/modernizr-*",
                 "~/Scripts/popper.min.js",
                 "~/Scripts/bootstrap.min.js",
                 "~/Scripts/jquery-ui.js",
@@ -24,7 +25,8 @@ namespace HRAttendance
             ));
 
             bundles.Add(new Bundle("~/bundles/operationLibs").Include(
-                "~/Scripts/Site/emolpyee-list-view.js"
+                "~/Scripts/Site/emolpyee-list-view.js",
+                "~/Scripts/Site/employee-reg-dlg.js"
 
             ));
 
