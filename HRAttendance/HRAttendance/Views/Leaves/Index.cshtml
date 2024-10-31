@@ -1,0 +1,40 @@
+﻿@model HRAttendance.Models.Leave.Request.ReqRequestLeaveInfo
+
+@{
+    ViewBag.Title = "Leave";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Tab Navigation -->
+<ul class="nav nav-tabs" id="LeaveTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="leave-tab" data-bs-toggle="tab" data-bs-target="#leave" type="button" role="tab" aria-controls="account" aria-selected="false">Leave</button>
+    </li>
+    @if (User.IsInRole(HRAttendance.Utils.Constants.ManagementPermissionName))
+    {
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="management-leave-tab" data-bs-toggle="tab" data-bs-target="#leave-management" type="button" role="tab" aria-controls="account" aria-selected="false">Management View</button>
+        </li>
+    }
+</ul>
+
+<!-- Tab Content -->
+<div class="tab-content" id="leaveTabContent">
+    <div class="tab-pane fade show active" id="leave" role="tabpanel" aria-labelledby="leave-tab">
+        @Html.Partial("~/Views/Leaves/_EmpLeaveView.cshtml", Model)
+    </div>
+    @if (User.IsInRole(HRAttendance.Utils.Constants.ManagementPermissionName))
+    {
+        <div class="tab-pane fade" id="leave-management" role="tabpanel" aria-labelledby="management-leave-tab">
+            <p>Comming soon...</p>
+            <p>The Management View will show the leave applied</p>
+        </div>
+    }
+</div>
+
+<script>
+    $(document).ready(function () {
+        attendanceView.Initialize();
+    })
+</script>
+

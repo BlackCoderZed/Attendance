@@ -1,5 +1,4 @@
-﻿using HRCommon.Enums;
-using HRCommon.Exceptions;
+﻿using HRCommon.Exceptions;
 using HRCommon.Utils;
 using HRDataAccess.Models;
 using HRDataAccess.Models.Common;

@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace HRAttendance.Controllers
 {
+    [Authorize]
     public class HomeController : BaseController
     {
         // GET: Home

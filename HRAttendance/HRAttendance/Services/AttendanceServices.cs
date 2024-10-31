@@ -40,7 +40,9 @@ namespace HRAttendance.Services
                     throw new AppException(AppException.MSG_NOT_CHECKEDIN);
                 }
 
-                AttendanceDao.SetCheckInOutStatus(userInfo.EmployeeID, (byte)model.CheckInOutStatus);
+                byte status = AttendanceHelper.GetAttendanceStatus(userInfo.EmployeeID, model.CheckInOutStatus);
+
+                AttendanceDao.SetCheckInOutStatus(userInfo.EmployeeID, (byte)model.CheckInOutStatus, status);
 
                 response.Result = CreateResult(Constants.ACK_RESULT, CommonMessage.MSG_Success);
             }

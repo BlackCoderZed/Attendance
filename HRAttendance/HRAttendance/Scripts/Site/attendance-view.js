@@ -12,6 +12,8 @@
             } else {
                 GetCheckInOut();
             }
+
+            GetAttendanceInfoList();
         });
 
         $('#attendance #checkOut').on('change', function () {
@@ -21,6 +23,7 @@
             } else {
                 GetCheckInOut();
             }
+            GetAttendanceInfoList();
         });
     }
 
@@ -41,7 +44,7 @@
                 uiBlocker.hideUIBlocker();
 
                 if (commonUtil.HandleResponseError(response) === false) {
-                    bootbox.alert(response.Message);
+                    //bootbox.alert(response.Message);
                 } 
 
                 GetCheckInOut();
@@ -102,15 +105,18 @@
             return;
         }
 
+        $('#employee-attendance').html('');
+
         $.each(datas, function (index, data) {
             const card = `
-                <div class="col-lg-4 col-md-4 emp-att">
-                    <div class="card mb-4">
+                <div class="col-lg-6 col-md-6">
+                    <div class="card mb-4  emp-att">
                         <div class="card-body">
-                            <h5 class="card-title">Date : ${data.Date}</h5>
+                            <h6 class="card-title">Date : ${data.Date}</h6>
                             <hr>
                             <p class="card-text">Check In : ${data.CheckInTime}</p>
                             <p class="card-text">Check Out : ${data.CheckOutTime}</p>
+                            <p class="card-text">Status : ${data.AttendType}</p>
                         </div>
                     </div>
                 </div>

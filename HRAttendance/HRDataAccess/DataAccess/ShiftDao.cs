@@ -11,6 +11,33 @@ namespace HRDataAccess.DataAccess
 {
     public class ShiftDao : BaseDao
     {
+        public static void GetEmployeeShift(int employeeId, out TimeSpan checkInTime, out TimeSpan checkOutTime)
+        {
+            try
+            {
+                checkInTime = TimeSpan.Zero;
+                checkOutTime = TimeSpan.Zero;
+
+                using (HRDBEntities context = GetHRDBConnection())
+                {
+                    Shift shift = context.Shifts
+                        .Join(context.Employees, s => s.ID, e => e.ShiftID, (s , e) => new {s, e})
+                        .Where(W => W.e.ID == employeeId)
+                        .Select(S => S.s).FirstOrDefault();
+
+                    if (shift != null)
+                    {
+                        checkInTime = shift.StartTime;
+                        checkOutTime = shift.EndTime;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new AppException(AppException.MSG_READ_FAIL);
+            }
+        }
+
         public static List<ShiftDbInfo> GetShiftDbInfos()
         {
             try

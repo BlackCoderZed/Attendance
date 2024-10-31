@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace HRAttendance.Controllers
 {
+    [Authorize]
     public class AttendanceController : BaseController
     {
         // GET: Attendance

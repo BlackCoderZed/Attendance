@@ -8,15 +8,29 @@ namespace HRCommon.Utils
 {
     public enum eAttendance
     {
-        Absent,
-        Attend,
-        Late,
-        OnLeave
+        Attend = 1,
+        Late = 2,
+        Absent = 3,
+        HalfDay = 4,
+        OnLeave = 5
     }
 
     public enum eCheckInOutStatus
     {
         CheckIn,
         CheckOut,
+    }
+
+    public enum eEmployeeCol
+    {
+        ID,
+        Name,
+        NRC,
+        Phone,
+        Email,
+        Address,
+        Gender,
+        UserID,
+        Password
     }
 }

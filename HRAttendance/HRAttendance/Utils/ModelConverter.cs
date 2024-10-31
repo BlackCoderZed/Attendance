@@ -28,8 +28,8 @@ namespace HRAttendance.Utils
                 info.EmployeeName = dbInfo.EmployeeName;
                 info.AttendType = Enum.GetName(typeof(eAttendance), dbInfo.AttendType);
                 info.Date = dbInfo.Date.ToString("dd-MM-yyyy");
-                info.CheckInTime = dbInfo.CheckInTime.HasValue ? dbInfo.CheckInTime.Value.ToString(@"hh\:mm\:ss") : string.Empty;
-                info.CheckOutTime = dbInfo.CheckOutTime.HasValue ? dbInfo.CheckOutTime.Value.ToString(@"hh\:mm\:ss") : string.Empty;
+                info.CheckInTime = dbInfo.CheckInTime.HasValue ? dbInfo.CheckInTime.Value.ToString(@"hh\:mm\:ss") : "-";
+                info.CheckOutTime = dbInfo.CheckOutTime.HasValue ? dbInfo.CheckOutTime.Value.ToString(@"hh\:mm\:ss") : "-";
 
                 attenInfoList.Add(info);
             }

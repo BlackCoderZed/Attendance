@@ -126,13 +126,42 @@ namespace HRDataAccess.DataAccess
             }
         }
 
+        public static TimeSpan GetEmployeeCheckInTime(int employeeId)
+        {
+            try
+            {
+                TimeSpan checkIn = TimeSpan.Zero;
+
+                using (HRDBEntities context = GetHRDBConnection())
+                {
+                    DateTime date = DateTime.Now.Date;
+
+                    Attendance attendance = context.Attendances
+                        .Where(W => W.EmployeeID == employeeId)
+                        .Where(W => W.Date == date)
+                        .FirstOrDefault();
+
+                    if (attendance != null)
+                    {
+                        checkIn = (TimeSpan)attendance.CheckInTime;
+                    }
+                }
+
+                return checkIn;
+            }
+            catch (Exception)
+            {
+                throw new AppException(AppException.MSG_READ_FAIL);
+            }
+        }
+
         /// <summary>
         /// SetCheckInOutStatus
         /// </summary>
         /// <param name="employeeID"></param>
         /// <param name="checkInOutStatus"></param>
         /// <exception cref="AppException"></exception>
-        public static void SetCheckInOutStatus(int employeeID, byte checkInOutStatus)
+        public static void SetCheckInOutStatus(int employeeID, byte checkInOutStatus, byte attendanceType)
         {
             try
             {
@@ -148,13 +177,18 @@ namespace HRDataAccess.DataAccess
                         attendance = GetAttendanceInfo(context, employeeID, date);
 
                         attendance.CheckOutTime = reqTime;
+
+                        if (attendance.Status < attendanceType) 
+                        { 
+                            attendance.Status = attendanceType; 
+                        }
                     }
                     else
                     {
                         attendance.EmployeeID = employeeID;
                         attendance.Date = date;
                         attendance.CheckInTime = reqTime;
-                        attendance.Status = (byte)eAttendance.Attend;
+                        attendance.Status = attendanceType;
 
                         context.Attendances.Add(attendance);
                     }

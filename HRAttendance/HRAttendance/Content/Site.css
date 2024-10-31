@@ -121,6 +121,13 @@ figcaption {
 }
 
 .emp-att {
-    padding-top : 1rem;
+    width : 100%;
     display : inline-block;
+}
+
+#employee-attendance, #employee-leave {
+    padding-top: 1rem;
+    height: 72vh;
+    background-color: #e3ecef;
+    overflow-y: scroll;
 }

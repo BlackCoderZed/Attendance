@@ -145,3 +145,4 @@ C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRAttendance\obj\Debug\H
 C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRAttendance\obj\Debug\HRAttendance.dll
 C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRAttendance\obj\Debug\HRAttendance.pdb
 C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRAttendance\obj\Debug\HRAttendance.Resources.Employee.EmployeeRex.resources
+C:\Users\saiau\Documents\Github\Attendance\HRAttendance\HRAttendance\obj\Debug\HRAttendance.Resources.Attendance.AttendanceRex.resources

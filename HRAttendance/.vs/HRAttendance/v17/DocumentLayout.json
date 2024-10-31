@@ -3,59 +3,83 @@
   "WorkspaceRootPath": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\views\\leaves\\_empleaveview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\leaves\\_empleaveview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\controllers\\leavescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\controllers\\leavescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\leave\\leaveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\leave\\leaveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\leave\\request\\reqrequestleaveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\leave\\request\\reqrequestleaveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\views\\leaves\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\leaves\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\leave\\response\\resrequestleaveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\leave\\response\\resrequestleaveinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\views\\attendance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\attendance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\views\\employee\\employeeregisterdlg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\employee\\employeeregisterdlg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\services\\attendanceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\services\\attendanceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\utils\\attendancehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\utils\\attendancehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\scripts\\site\\attendance-view.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\scripts\\site\\attendance-view.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\views\\attendance\\_empattendanceview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\attendance\\_empattendanceview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\utils\\modelconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\utils\\modelconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\resources\\attendance\\attendancerex.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\resources\\attendance\\attendancerex.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrdataaccess\\dataaccess\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|solutionrelative:hrdataaccess\\dataaccess\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\attendance\\response\\resgetempattenanceinfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\attendance\\response\\resgetempattenanceinfolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{665F2116-61BD-4FDB-B4D1-B239CCC0DE49}|HRCommon\\HRCommon.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrcommon\\utils\\commonenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{665F2116-61BD-4FDB-B4D1-B239CCC0DE49}|HRCommon\\HRCommon.csproj|solutionrelative:hrcommon\\utils\\commonenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\attendance\\empemployeeattendanceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\attendance\\empemployeeattendanceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\scripts\\site\\common.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\scripts\\site\\common.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\scripts\\site\\emolpyee-list-view.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\scripts\\site\\emolpyee-list-view.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\views\\attendance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\attendance\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrdataaccess\\dataaccess\\attendancedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|solutionrelative:hrdataaccess\\dataaccess\\attendancedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrdataaccess\\models\\attendancemodels\\empemployeeattendancedbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrdataaccess\\models\\attendancemodels\\empemployeeattendancedbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|solutionrelative:hrdataaccess\\models\\attendancemodels\\empemployeeattendancedbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\attendance\\response\\resgetcheckinoutinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\models\\attendance\\response\\resgetcheckinoutinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\attendance\\response\\resgetcheckinoutinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -63,7 +87,7 @@
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\scripts\\site\\employee-reg-dlg.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{665F2116-61BD-4FDB-B4D1-B239CCC0DE49}|HRCommon\\HRCommon.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrcommon\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{665F2116-61BD-4FDB-B4D1-B239CCC0DE49}|HRCommon\\HRCommon.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrcommon\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{665F2116-61BD-4FDB-B4D1-B239CCC0DE49}|HRCommon\\HRCommon.csproj|solutionrelative:hrcommon\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -83,15 +107,11 @@
       "RelativeMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|solutionrelative:hrdataaccess\\models\\account\\dbloginuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\views\\employee\\employeeregisterdlg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\views\\employee\\employeeregisterdlg.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\role\\response\\resuserroleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\models\\role\\response\\resuserroleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\role\\response\\resuserroleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\services\\roleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\services\\roleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\services\\roleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -99,11 +119,11 @@
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\userroleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\models\\userroleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\userroleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrdataaccess\\dataaccess\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrdataaccess\\dataaccess\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|solutionrelative:hrdataaccess\\dataaccess\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -111,15 +131,11 @@
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\services\\employeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrattendance\\models\\shift\\shiftinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\models\\shift\\shiftinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\models\\shift\\shiftinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrdataaccess\\dataaccess\\shiftdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|solutionrelative:hrdataaccess\\dataaccess\\shiftdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|c:\\users\\saiau\\documents\\github\\attendance\\hrattendance\\hrdataaccess\\models\\shiftmodels\\shiftdbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrdataaccess\\models\\shiftmodels\\shiftdbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0597BBE5-8D2F-4FAE-BDBB-1DD1BA10F5F2}|HRDataAccess\\HRDataAccess.csproj|solutionrelative:hrdataaccess\\models\\shiftmodels\\shiftdbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -157,10 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|solutionrelative:hrattendance\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCFB379A-7806-429B-937D-EE3FAEB5A4DC}|HRAttendance\\HRAttendance.csproj|C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\hrattendance\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -234,7 +246,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -243,97 +255,214 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ModelConverter.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Utils\\ModelConverter.cs",
-              "RelativeDocumentMoniker": "HRAttendance\\Utils\\ModelConverter.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Utils\\ModelConverter.cs",
-              "RelativeToolTip": "HRAttendance\\Utils\\ModelConverter.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAQAAAAAAAAAA==",
+              "Title": "ReqRequestLeaveInfo.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Leave\\Request\\ReqRequestLeaveInfo.cs",
+              "RelativeDocumentMoniker": "HRAttendance\\Models\\Leave\\Request\\ReqRequestLeaveInfo.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Leave\\Request\\ReqRequestLeaveInfo.cs",
+              "RelativeToolTip": "HRAttendance\\Models\\Leave\\Request\\ReqRequestLeaveInfo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA+wBEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T12:26:18.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AttendanceController.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\AttendanceController.cs",
-              "RelativeDocumentMoniker": "HRAttendance\\Controllers\\AttendanceController.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\AttendanceController.cs",
-              "RelativeToolTip": "HRAttendance\\Controllers\\AttendanceController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAC0AAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:11:10.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AttendanceServices.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\AttendanceServices.cs",
-              "RelativeDocumentMoniker": "HRAttendance\\Services\\AttendanceServices.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\AttendanceServices.cs",
-              "RelativeToolTip": "HRAttendance\\Services\\AttendanceServices.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAvwFcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T09:00:44.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "attendance-view.js",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Scripts\\Site\\attendance-view.js",
-              "RelativeDocumentMoniker": "HRAttendance\\Scripts\\Site\\attendance-view.js",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Scripts\\Site\\attendance-view.js",
-              "RelativeToolTip": "HRAttendance\\Scripts\\Site\\attendance-view.js",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAowGsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-31T09:49:01.237Z",
+              "WhenOpened": "2024-10-31T18:37:58.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Site.css",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Content\\Site.css",
-              "RelativeDocumentMoniker": "HRAttendance\\Content\\Site.css",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Content\\Site.css",
-              "RelativeToolTip": "HRAttendance\\Content\\Site.css",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAgwHsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-31T11:12:51.358Z",
+              "Title": "LeavesController.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\LeavesController.cs",
+              "RelativeDocumentMoniker": "HRAttendance\\Controllers\\LeavesController.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\LeavesController.cs",
+              "RelativeToolTip": "HRAttendance\\Controllers\\LeavesController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:02:18.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmpEmployeeAttendanceInfo.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Attendance\\EmpEmployeeAttendanceInfo.cs",
-              "RelativeDocumentMoniker": "HRAttendance\\Models\\Attendance\\EmpEmployeeAttendanceInfo.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Attendance\\EmpEmployeeAttendanceInfo.cs",
-              "RelativeToolTip": "HRAttendance\\Models\\Attendance\\EmpEmployeeAttendanceInfo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBMAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Leaves\\Index.cshtml",
+              "RelativeDocumentMoniker": "HRAttendance\\Views\\Leaves\\Index.cshtml",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Leaves\\Index.cshtml",
+              "RelativeToolTip": "HRAttendance\\Views\\Leaves\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T17:02:39.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_EmpLeaveView.cshtml",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Leaves\\_EmpLeaveView.cshtml",
+              "RelativeDocumentMoniker": "HRAttendance\\Views\\Leaves\\_EmpLeaveView.cshtml",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Leaves\\_EmpLeaveView.cshtml",
+              "RelativeToolTip": "HRAttendance\\Views\\Leaves\\_EmpLeaveView.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T17:07:03.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeaveInfo.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Leave\\LeaveInfo.cs",
+              "RelativeDocumentMoniker": "HRAttendance\\Models\\Leave\\LeaveInfo.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Leave\\LeaveInfo.cs",
+              "RelativeToolTip": "HRAttendance\\Models\\Leave\\LeaveInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T12:04:04.897Z",
+              "WhenOpened": "2024-10-31T18:36:16.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ResGetEmpAttenanceInfoList.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Attendance\\Response\\ResGetEmpAttenanceInfoList.cs",
-              "RelativeDocumentMoniker": "HRAttendance\\Models\\Attendance\\Response\\ResGetEmpAttenanceInfoList.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Attendance\\Response\\ResGetEmpAttenanceInfoList.cs",
-              "RelativeToolTip": "HRAttendance\\Models\\Attendance\\Response\\ResGetEmpAttenanceInfoList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAtAAAAAAAAAA==",
+              "Title": "ResRequestLeaveInfo.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Leave\\Response\\ResRequestLeaveInfo.cs",
+              "RelativeDocumentMoniker": "HRAttendance\\Models\\Leave\\Response\\ResRequestLeaveInfo.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Leave\\Response\\ResRequestLeaveInfo.cs",
+              "RelativeToolTip": "HRAttendance\\Models\\Leave\\Response\\ResRequestLeaveInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T12:00:15.075Z",
+              "WhenOpened": "2024-10-31T18:37:12.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_EmpAttendanceView.cshtml",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Attendance\\_EmpAttendanceView.cshtml",
+              "RelativeDocumentMoniker": "HRAttendance\\Views\\Attendance\\_EmpAttendanceView.cshtml",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Attendance\\_EmpAttendanceView.cshtml",
+              "RelativeToolTip": "HRAttendance\\Views\\Attendance\\_EmpAttendanceView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T16:57:45.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Attendance\\Index.cshtml",
+              "RelativeDocumentMoniker": "HRAttendance\\Views\\Attendance\\Index.cshtml",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Attendance\\Index.cshtml",
+              "RelativeToolTip": "HRAttendance\\Views\\Attendance\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAADzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T07:21:54.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "EmployeeRegisterDlg.cshtml",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
+              "RelativeDocumentMoniker": "HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
+              "RelativeToolTip": "HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T07:16:44.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AttendanceServices.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\AttendanceServices.cs",
+              "RelativeDocumentMoniker": "HRAttendance\\Services\\AttendanceServices.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\AttendanceServices.cs",
+              "RelativeToolTip": "HRAttendance\\Services\\AttendanceServices.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAvwCoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T18:28:04.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Content\\Site.css",
+              "RelativeDocumentMoniker": "HRAttendance\\Content\\Site.css",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Content\\Site.css",
+              "RelativeToolTip": "HRAttendance\\Content\\Site.css",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-31T18:04:30.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AttendanceHelper.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Utils\\AttendanceHelper.cs",
+              "RelativeDocumentMoniker": "HRAttendance\\Utils\\AttendanceHelper.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Utils\\AttendanceHelper.cs",
+              "RelativeToolTip": "HRAttendance\\Utils\\AttendanceHelper.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvygAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:56:42.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AttendanceRex.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Resources\\Attendance\\AttendanceRex.Designer.cs",
+              "RelativeDocumentMoniker": "HRAttendance\\Resources\\Attendance\\AttendanceRex.Designer.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Resources\\Attendance\\AttendanceRex.Designer.cs",
+              "RelativeToolTip": "HRAttendance\\Resources\\Attendance\\AttendanceRex.Designer.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswFwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:22:26.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeDao.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\DataAccess\\EmployeeDao.cs",
+              "RelativeDocumentMoniker": "HRDataAccess\\DataAccess\\EmployeeDao.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\DataAccess\\EmployeeDao.cs",
+              "RelativeToolTip": "HRDataAccess\\DataAccess\\EmployeeDao.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T13:22:19.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CommonEnum.cs",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRCommon\\Utils\\CommonEnum.cs",
+              "RelativeDocumentMoniker": "HRCommon\\Utils\\CommonEnum.cs",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRCommon\\Utils\\CommonEnum.cs",
+              "RelativeToolTip": "HRCommon\\Utils\\CommonEnum.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T15:03:56.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "common.js",
+              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Scripts\\Site\\common.js",
+              "RelativeDocumentMoniker": "HRAttendance\\Scripts\\Site\\common.js",
+              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Scripts\\Site\\common.js",
+              "RelativeToolTip": "HRAttendance\\Scripts\\Site\\common.js",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-31T14:50:48.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "emolpyee-list-view.js",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Scripts\\Site\\emolpyee-list-view.js",
               "RelativeDocumentMoniker": "HRAttendance\\Scripts\\Site\\emolpyee-list-view.js",
@@ -341,38 +470,11 @@
               "RelativeToolTip": "HRAttendance\\Scripts\\Site\\emolpyee-list-view.js",
               "ViewState": "AgIAACsAAAAAAAAAAAAUwDMAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-30T13:50:48.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T13:50:48.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Attendance\\Index.cshtml",
-              "RelativeDocumentMoniker": "HRAttendance\\Views\\Attendance\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Attendance\\Index.cshtml",
-              "RelativeToolTip": "HRAttendance\\Views\\Attendance\\Index.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T07:21:54.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AttendanceDao.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\DataAccess\\AttendanceDao.cs",
-              "RelativeDocumentMoniker": "HRDataAccess\\DataAccess\\AttendanceDao.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\DataAccess\\AttendanceDao.cs",
-              "RelativeToolTip": "HRDataAccess\\DataAccess\\AttendanceDao.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAhwFkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T09:09:36.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "EmpEmployeeAttendanceDBInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\Models\\AttendanceModels\\EmpEmployeeAttendanceDBInfo.cs",
               "RelativeDocumentMoniker": "HRDataAccess\\Models\\AttendanceModels\\EmpEmployeeAttendanceDBInfo.cs",
@@ -380,12 +482,11 @@
               "RelativeToolTip": "HRDataAccess\\Models\\AttendanceModels\\EmpEmployeeAttendanceDBInfo.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAEwBQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T12:14:58.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T12:14:58.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Controllers\\EmployeeController.cs",
@@ -393,25 +494,11 @@
               "RelativeToolTip": "HRAttendance\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T12:07:19.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T12:07:19.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "HRAttendance\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "HRAttendance\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-29T16:21:10.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "ResGetCheckInOutInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Attendance\\Response\\ResGetCheckInOutInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Attendance\\Response\\ResGetCheckInOutInfo.cs",
@@ -419,12 +506,11 @@
               "RelativeToolTip": "HRAttendance\\Models\\Attendance\\Response\\ResGetCheckInOutInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T10:25:43.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T10:25:43.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "employee-reg-dlg.js",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Scripts\\Site\\employee-reg-dlg.js",
               "RelativeDocumentMoniker": "HRAttendance\\Scripts\\Site\\employee-reg-dlg.js",
@@ -432,12 +518,11 @@
               "RelativeToolTip": "HRAttendance\\Scripts\\Site\\employee-reg-dlg.js",
               "ViewState": "AgIAAGEAAAAAAAAAAAASwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-30T08:22:41.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T08:22:41.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "AppException.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRCommon\\Exceptions\\AppException.cs",
               "RelativeDocumentMoniker": "HRCommon\\Exceptions\\AppException.cs",
@@ -445,12 +530,11 @@
               "RelativeToolTip": "HRCommon\\Exceptions\\AppException.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAlwBkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T09:24:15.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T09:24:15.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "CommonEnums.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Utils\\CommonEnums.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Utils\\CommonEnums.cs",
@@ -458,12 +542,11 @@
               "RelativeToolTip": "HRAttendance\\Utils\\CommonEnums.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAEwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T18:40:47.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T18:40:47.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "LoginUserInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Account\\LoginUserInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Account\\LoginUserInfo.cs",
@@ -471,12 +554,11 @@
               "RelativeToolTip": "HRAttendance\\Models\\Account\\LoginUserInfo.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T12:36:29.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T12:36:29.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "AccountServices.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\AccountServices.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Services\\AccountServices.cs",
@@ -484,12 +566,11 @@
               "RelativeToolTip": "HRAttendance\\Services\\AccountServices.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwBsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:17:08.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T14:17:08.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "DbLoginUserInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\Models\\Account\\DbLoginUserInfo.cs",
               "RelativeDocumentMoniker": "HRDataAccess\\Models\\Account\\DbLoginUserInfo.cs",
@@ -497,12 +578,11 @@
               "RelativeToolTip": "HRDataAccess\\Models\\Account\\DbLoginUserInfo.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:30:05.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T14:30:05.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "UserRoleProvider.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\UserRoleProvider.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\UserRoleProvider.cs",
@@ -510,25 +590,11 @@
               "RelativeToolTip": "HRAttendance\\Models\\UserRoleProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:14:27.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T07:14:27.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EmployeeRegisterDlg.cshtml",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
-              "RelativeDocumentMoniker": "HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
-              "RelativeToolTip": "HRAttendance\\Views\\Employee\\EmployeeRegisterDlg.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T07:16:44.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "RoleServices.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\RoleServices.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Services\\RoleServices.cs",
@@ -536,12 +602,11 @@
               "RelativeToolTip": "HRAttendance\\Services\\RoleServices.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAuwBIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:15:29.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T07:15:29.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "ResUserRoleInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Role\\Response\\ResUserRoleInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Role\\Response\\ResUserRoleInfo.cs",
@@ -549,12 +614,11 @@
               "RelativeToolTip": "HRAttendance\\Models\\Role\\Response\\ResUserRoleInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:16:33.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T07:16:33.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "RoleDao.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\DataAccess\\RoleDao.cs",
               "RelativeDocumentMoniker": "HRDataAccess\\DataAccess\\RoleDao.cs",
@@ -562,12 +626,11 @@
               "RelativeToolTip": "HRDataAccess\\DataAccess\\RoleDao.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T07:17:46.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T07:17:46.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Web.config",
               "RelativeDocumentMoniker": "HRAttendance\\Web.config",
@@ -580,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "EmployeeServices.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\EmployeeServices.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Services\\EmployeeServices.cs",
@@ -588,12 +651,11 @@
               "RelativeToolTip": "HRAttendance\\Services\\EmployeeServices.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAuwBIAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:27:16.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T15:27:16.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "ShiftInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Shift\\ShiftInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Shift\\ShiftInfo.cs",
@@ -601,25 +663,11 @@
               "RelativeToolTip": "HRAttendance\\Models\\Shift\\ShiftInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T04:37:19.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T04:37:19.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ShiftDao.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\DataAccess\\ShiftDao.cs",
-              "RelativeDocumentMoniker": "HRDataAccess\\DataAccess\\ShiftDao.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\DataAccess\\ShiftDao.cs",
-              "RelativeToolTip": "HRDataAccess\\DataAccess\\ShiftDao.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAawCEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T05:08:13.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "ShiftDbInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\Models\\ShiftModels\\ShiftDbInfo.cs",
               "RelativeDocumentMoniker": "HRDataAccess\\Models\\ShiftModels\\ShiftDbInfo.cs",
@@ -627,24 +675,22 @@
               "RelativeToolTip": "HRDataAccess\\Models\\ShiftModels\\ShiftDbInfo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T05:06:23.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T05:06:23.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "HREntities.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\Models\\HREntities.edmx",
               "RelativeDocumentMoniker": "HRDataAccess\\Models\\HREntities.edmx",
               "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\Models\\HREntities.edmx [Diagram1]",
               "RelativeToolTip": "HRDataAccess\\Models\\HREntities.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-10-30T14:37:04.809Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2024-10-30T14:37:04.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "HREntities.Designer.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\Models\\HREntities.Designer.cs",
               "RelativeDocumentMoniker": "HRDataAccess\\Models\\HREntities.Designer.cs",
@@ -652,12 +698,11 @@
               "RelativeToolTip": "HRDataAccess\\Models\\HREntities.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T12:33:10.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T12:33:10.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "EmployeeInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Employee\\EmployeeInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Employee\\EmployeeInfo.cs",
@@ -669,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Employee\\Index.cshtml",
               "RelativeDocumentMoniker": "HRAttendance\\Views\\Employee\\Index.cshtml",
@@ -677,11 +722,12 @@
               "RelativeToolTip": "HRAttendance\\Views\\Employee\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T16:16:14.031Z"
+              "WhenOpened": "2024-10-30T16:16:14.031Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Common.Designer.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Resources\\Common\\Common.Designer.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Resources\\Common\\Common.Designer.cs",
@@ -693,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "ResDeleteEmployeeInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Employee\\Response\\ResDeleteEmployeeInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Employee\\Response\\ResDeleteEmployeeInfo.cs",
@@ -705,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "SecurityHandler.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Utils\\SecurityHandler.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Utils\\SecurityHandler.cs",
@@ -717,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "ResCreateEmployeeInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Employee\\Response\\ResCreateEmployeeInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Employee\\Response\\ResCreateEmployeeInfo.cs",
@@ -729,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "FilterConfig.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\App_Start\\FilterConfig.cs",
               "RelativeDocumentMoniker": "HRAttendance\\App_Start\\FilterConfig.cs",
@@ -741,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "BaseController.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Controllers\\BaseController.cs",
@@ -753,19 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "HRAttendance\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "HRAttendance\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T16:20:59.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "_GridviewEmployeeListView.cshtml",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Employee\\_GridviewEmployeeListView.cshtml",
               "RelativeDocumentMoniker": "HRAttendance\\Views\\Employee\\_GridviewEmployeeListView.cshtml",
@@ -777,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "IQueryableExtensions.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\IQueryableExtensions.cs",
               "RelativeDocumentMoniker": "HRDataAccess\\IQueryableExtensions.cs",
@@ -789,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "DBGridviewFilterInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRDataAccess\\Models\\Common\\DBGridviewFilterInfo.cs",
               "RelativeDocumentMoniker": "HRDataAccess\\Models\\Common\\DBGridviewFilterInfo.cs",
@@ -801,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "HRAttendance\\Views\\Account\\Login.cshtml",
@@ -813,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "CypherAndHashManager.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRCommon\\Utils\\CypherAndHashManager.cs",
               "RelativeDocumentMoniker": "HRCommon\\Utils\\CypherAndHashManager.cs",
@@ -825,7 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "DataAccessHelper.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Utils\\DataAccessHelper.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Utils\\DataAccessHelper.cs",
@@ -837,7 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "DBConfig.xml",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\App_Data\\DBConfig.xml",
               "RelativeDocumentMoniker": "HRAttendance\\App_Data\\DBConfig.xml",
@@ -849,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Global.asax.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Global.asax.cs",
@@ -861,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "DBConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Common\\DBConfiguration.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Common\\DBConfiguration.cs",
@@ -873,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "ResultBase.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Common\\ResultBase.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Common\\ResultBase.cs",
@@ -885,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "Result.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Common\\Result.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Common\\Result.cs",
@@ -897,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "BaseServices.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Services\\BaseServices.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Services\\BaseServices.cs",
@@ -909,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "GridviewJsonResponse.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Common\\GridviewJsonResponse.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Common\\GridviewJsonResponse.cs",
@@ -921,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "GridviewFilterInfo.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\Models\\Common\\GridviewFilterInfo.cs",
               "RelativeDocumentMoniker": "HRAttendance\\Models\\Common\\GridviewFilterInfo.cs",
@@ -933,7 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "C:\\Users\\saiau\\Documents\\Github\\Attendance\\HRAttendance\\HRAttendance\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "HRAttendance\\App_Start\\RouteConfig.cs",
