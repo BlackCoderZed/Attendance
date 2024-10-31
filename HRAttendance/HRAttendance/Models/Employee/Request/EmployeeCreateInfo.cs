@@ -1,4 +1,8 @@
-﻿using HRAttendance.Resources.Employee;
+﻿using HRAttendance.Models.Shift;
+using HRAttendance.Resources.Employee;
+using HRAttendance.Utils;
+using HRDataAccess.DataAccess;
+using HRDataAccess.Models.ShiftModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -42,5 +46,16 @@ namespace HRAttendance.Models.Employee.Request
         public bool IsUpdate { get; set; }
 
         public int UserIDVal { get; set; }
+
+        [Display(ResourceType = typeof(EmployeeRex), Name = nameof(EmployeeRex.LB_Shift))]
+        public int ShiftID { get; set; }
+
+        public List<ShiftInfo> ShiftList { get; set; }
+
+        public EmployeeCreateInfo()
+        {
+            List<ShiftDbInfo> shiftDbInfos = ShiftDao.GetShiftDbInfos();
+            ShiftList = ModelConverter.CreateUIShiftList(shiftDbInfos);
+        }
     }
 }

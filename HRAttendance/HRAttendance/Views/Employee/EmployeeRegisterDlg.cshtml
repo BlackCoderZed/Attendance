@@ -92,6 +92,17 @@
                                 @Html.TextAreaFor(Model => Model.Address, 5, 5, new { @class = "form-control" })
                             </div>
                         </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                @Html.LabelFor(Model => Model.ShiftID)
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                @Html.DropDownListFor(Model => Model.ShiftID, new SelectList(Model.ShiftList, "ShiftId", "ShiftName") , new { @class = "form-control" })
+                            </div>
+                        </div>
                     </div>
 
                     <div id="account" class="tab-pane fade show">

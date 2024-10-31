@@ -104,3 +104,23 @@ figcaption {
 .form-control {
     border: 1px solid #e3ecef;
 }
+
+.form-switch.form-switch-lg {
+    margin-bottom: 1.3rem; /* JUST FOR STYLING PURPOSE */
+}
+
+.form-switch.form-switch-lg .form-check-input {
+        height: 2rem;
+        width: calc(3rem + 0.75rem);
+        border-radius: 4rem;
+}    
+
+.form-switch.form-switch-lg .form-check-label {
+        font-size : 24px;
+        /*border-radius: 4rem;*/
+}
+
+.emp-att {
+    padding-top : 1rem;
+    display : inline-block;
+}

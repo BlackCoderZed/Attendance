@@ -21,6 +21,10 @@ namespace HRCommon.Exceptions
 
         public const string MSG_INVALID_Password = "Invalid password.";
 
+        public const string MSG_ALREADY_CHECKEDIN = "Already checked in.";
+
+        public const string MSG_NOT_CHECKEDIN = "Not checked in yet.";
+
         public AppException(string message) : base(message) { }
     }
 }

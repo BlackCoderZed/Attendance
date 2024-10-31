@@ -15,5 +15,7 @@ namespace HRDataAccess.Models.Account
         public string Password { get; set; }
 
         public string UserDlpName { get; set; }
+
+        public int EmployeeID { get; set; }
     }
 }

@@ -26,7 +26,8 @@ namespace HRAttendance
 
             bundles.Add(new Bundle("~/bundles/operationLibs").Include(
                 "~/Scripts/Site/emolpyee-list-view.js",
-                "~/Scripts/Site/employee-reg-dlg.js"
+                "~/Scripts/Site/employee-reg-dlg.js",
+                "~/Scripts/Site/attendance-view.js"
 
             ));
 

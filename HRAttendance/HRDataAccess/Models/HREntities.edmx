@@ -5,6 +5,17 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Attendances">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="CheckInTime" Type="time" Precision="7" />
+          <Property Name="CheckOutTime" Type="time" Precision="7" />
+          <Property Name="Status" Type="tinyint" />
+        </EntityType>
         <EntityType Name="Employees">
           <Key>
             <PropertyRef Name="ID" />
@@ -22,6 +33,7 @@
           <Property Name="DeleteDateTime" Type="datetime" />
           <Property Name="LastUpdateUserID" Type="int" />
           <Property Name="LastUpdateDateTime" Type="datetime" />
+          <Property Name="ShiftID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Permissions">
           <Key>
@@ -38,6 +50,15 @@
           <Property Name="IntValue" Type="int" />
           <Property Name="StrVal" Type="varchar" MaxLength="50" />
           <Property Name="FloatVal" Type="float" />
+        </EntityType>
+        <EntityType Name="Shift">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShiftName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="StartTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="EndTime" Type="time" Precision="7" Nullable="false" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -61,6 +82,30 @@
           <Property Name="UserID" Type="int" Nullable="false" />
           <Property Name="PermissionID" Type="int" Nullable="false" />
         </EntityType>
+        <Association Name="FK_Attendances_Employees">
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+          <End Role="Attendances" Type="Self.Attendances" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attendances">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employees_Shift">
+          <End Role="Shift" Type="Self.Shift" Multiplicity="1" />
+          <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shift">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Employees">
+              <PropertyRef Name="ShiftID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Users_Employees">
           <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
           <End Role="Users" Type="Self.Users" Multiplicity="*" />
@@ -98,11 +143,21 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="ModelsStoreContainer">
+          <EntitySet Name="Attendances" EntityType="Self.Attendances" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Permissions" EntityType="Self.Permissions" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Settings" EntityType="Self.Settings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Shift" EntityType="Self.Shift" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UsersPermissions" EntityType="Self.UsersPermissions" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Attendances_Employees" Association="Self.FK_Attendances_Employees">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="Attendances" EntitySet="Attendances" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employees_Shift" Association="Self.FK_Employees_Shift">
+            <End Role="Shift" EntitySet="Shift" />
+            <End Role="Employees" EntitySet="Employees" />
+          </AssociationSet>
           <AssociationSet Name="FK_Users_Employees" Association="Self.FK_Users_Employees">
             <End Role="Employees" EntitySet="Employees" />
             <End Role="Users" EntitySet="Users" />
@@ -131,7 +186,6 @@
         </EntityType>
         <EntityContainer Name="HRDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Settings" EntityType="Self.Setting" />
-          <EntitySet Name="Employees" EntityType="Models.Employee" />
           <EntitySet Name="Permissions" EntityType="Models.Permission" />
           <EntitySet Name="UsersPermissions" EntityType="Models.UsersPermission" />
           <AssociationSet Name="FK_UsersPermissions_Permissions" Association="Models.FK_UsersPermissions_Permissions">
@@ -139,34 +193,26 @@
             <End Role="UsersPermission" EntitySet="UsersPermissions" />
           </AssociationSet>
           <EntitySet Name="Users" EntityType="Models.User" />
-          <AssociationSet Name="FK_Users_Employees" Association="Models.FK_Users_Employees">
-            <End Role="Employee" EntitySet="Employees" />
-            <End Role="User" EntitySet="Users" />
-          </AssociationSet>
           <AssociationSet Name="FK_UsersPermissions_Users" Association="Models.FK_UsersPermissions_Users">
             <End Role="User" EntitySet="Users" />
             <End Role="UsersPermission" EntitySet="UsersPermissions" />
           </AssociationSet>
+          <EntitySet Name="Attendances" EntityType="Models.Attendance" />
+          <EntitySet Name="Employees" EntityType="Models.Employee" />
+          <EntitySet Name="Shifts" EntityType="Models.Shift" />
+          <AssociationSet Name="FK_Attendances_Employees" Association="Models.FK_Attendances_Employees">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Attendance" EntitySet="Attendances" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employees_Shift" Association="Models.FK_Employees_Shift">
+            <End Role="Shift" EntitySet="Shifts" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Users_Employees" Association="Models.FK_Users_Employees">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
         </EntityContainer>
-        <EntityType Name="Employee">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="FullName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="NRC" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Gender" Type="Byte" Nullable="false" />
-          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
-          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Terminated" Type="Boolean" />
-          <Property Name="DelFlg" Type="Int32" />
-          <Property Name="RegistDateTime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="DeleteDateTime" Type="DateTime" Precision="3" />
-          <Property Name="LastUpdateUserID" Type="Int32" />
-          <Property Name="LastUpdateDateTime" Type="DateTime" Precision="3" />
-          <NavigationProperty Name="Users" Relationship="Models.FK_Users_Employees" FromRole="Employee" ToRole="User" />
-        </EntityType>
         <EntityType Name="Permission">
           <Key>
             <PropertyRef Name="ID" />
@@ -210,21 +256,9 @@
           <Property Name="DelFlg" Type="Int32" />
           <Property Name="DeleteDateTime" Type="DateTime" Precision="3" />
           <Property Name="DeleteUserID" Type="Int32" />
-          <NavigationProperty Name="Employee" Relationship="Models.FK_Users_Employees" FromRole="User" ToRole="Employee" />
           <NavigationProperty Name="UsersPermissions" Relationship="Models.FK_UsersPermissions_Users" FromRole="User" ToRole="UsersPermission" />
+          <NavigationProperty Name="Employee" Relationship="Models.FK_Users_Employees" FromRole="User" ToRole="Employee" />
         </EntityType>
-        <Association Name="FK_Users_Employees">
-          <End Type="Models.Employee" Role="Employee" Multiplicity="1" />
-          <End Type="Models.User" Role="User" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Employee">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="User">
-              <PropertyRef Name="EmployeeID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_UsersPermissions_Users">
           <End Type="Models.User" Role="User" Multiplicity="1" />
           <End Type="Models.UsersPermission" Role="UsersPermission" Multiplicity="*" />
@@ -234,6 +268,86 @@
             </Principal>
             <Dependent Role="UsersPermission">
               <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Attendance">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="CheckInTime" Type="Time" Precision="7" />
+          <Property Name="CheckOutTime" Type="Time" Precision="7" />
+          <Property Name="Status" Type="Byte" />
+          <NavigationProperty Name="Employee" Relationship="Models.FK_Attendances_Employees" FromRole="Attendance" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NRC" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="Byte" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Terminated" Type="Boolean" />
+          <Property Name="DelFlg" Type="Int32" />
+          <Property Name="RegistDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DeleteDateTime" Type="DateTime" Precision="3" />
+          <Property Name="LastUpdateUserID" Type="Int32" />
+          <Property Name="LastUpdateDateTime" Type="DateTime" Precision="3" />
+          <Property Name="ShiftID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Attendances" Relationship="Models.FK_Attendances_Employees" FromRole="Employee" ToRole="Attendance" />
+          <NavigationProperty Name="Shift" Relationship="Models.FK_Employees_Shift" FromRole="Employee" ToRole="Shift" />
+          <NavigationProperty Name="Users" Relationship="Models.FK_Users_Employees" FromRole="Employee" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Shift">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ShiftName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StartTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="EndTime" Type="Time" Nullable="false" Precision="7" />
+          <NavigationProperty Name="Employees" Relationship="Models.FK_Employees_Shift" FromRole="Shift" ToRole="Employee" />
+        </EntityType>
+        <Association Name="FK_Attendances_Employees">
+          <End Type="Models.Employee" Role="Employee" Multiplicity="1" />
+          <End Type="Models.Attendance" Role="Attendance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attendance">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employees_Shift">
+          <End Type="Models.Shift" Role="Shift" Multiplicity="1" />
+          <End Type="Models.Employee" Role="Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shift">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="ShiftID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Users_Employees">
+          <End Type="Models.Employee" Role="Employee" Multiplicity="1" />
+          <End Type="Models.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="EmployeeID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -250,25 +364,6 @@
                 <ScalarProperty Name="IntValue" ColumnName="IntValue" />
                 <ScalarProperty Name="StrVal" ColumnName="StrVal" />
                 <ScalarProperty Name="FloatVal" ColumnName="FloatVal" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Employees">
-            <EntityTypeMapping TypeName="Models.Employee">
-              <MappingFragment StoreEntitySet="Employees">
-                <ScalarProperty Name="LastUpdateDateTime" ColumnName="LastUpdateDateTime" />
-                <ScalarProperty Name="LastUpdateUserID" ColumnName="LastUpdateUserID" />
-                <ScalarProperty Name="DeleteDateTime" ColumnName="DeleteDateTime" />
-                <ScalarProperty Name="RegistDateTime" ColumnName="RegistDateTime" />
-                <ScalarProperty Name="DelFlg" ColumnName="DelFlg" />
-                <ScalarProperty Name="Terminated" ColumnName="Terminated" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-                <ScalarProperty Name="Gender" ColumnName="Gender" />
-                <ScalarProperty Name="NRC" ColumnName="NRC" />
-                <ScalarProperty Name="FullName" ColumnName="FullName" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -300,6 +395,48 @@
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Attendances">
+            <EntityTypeMapping TypeName="Models.Attendance">
+              <MappingFragment StoreEntitySet="Attendances">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CheckOutTime" ColumnName="CheckOutTime" />
+                <ScalarProperty Name="CheckInTime" ColumnName="CheckInTime" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="Models.Employee">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+                <ScalarProperty Name="LastUpdateDateTime" ColumnName="LastUpdateDateTime" />
+                <ScalarProperty Name="LastUpdateUserID" ColumnName="LastUpdateUserID" />
+                <ScalarProperty Name="DeleteDateTime" ColumnName="DeleteDateTime" />
+                <ScalarProperty Name="RegistDateTime" ColumnName="RegistDateTime" />
+                <ScalarProperty Name="DelFlg" ColumnName="DelFlg" />
+                <ScalarProperty Name="Terminated" ColumnName="Terminated" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="NRC" ColumnName="NRC" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shifts">
+            <EntityTypeMapping TypeName="Models.Shift">
+              <MappingFragment StoreEntitySet="Shift">
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="ShiftName" ColumnName="ShiftName" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

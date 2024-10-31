@@ -1,4 +1,5 @@
 ﻿using HRAttendance.Models.Account;
+using HRAttendance.Models.Attendance.Request;
 using HRAttendance.Models.Employee.Request;
 using HRAttendance.Resources.Common;
 using HRCommon.Exceptions;
@@ -12,6 +13,21 @@ namespace HRAttendance.Utils
 {
     public class ModelValidator
     {
+        internal static void ValidateCheckInOutInfo(ReqAttendanceSetInfo model)
+        {
+            try
+            {
+                if (model == null)
+                {
+                    throw new AppException(CommonMessage.MSG_InvalidValue);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         /// <summary>
         /// Validate Employee Info
         /// </summary>

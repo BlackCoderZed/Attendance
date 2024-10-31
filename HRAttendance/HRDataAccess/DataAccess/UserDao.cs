@@ -42,6 +42,7 @@ namespace HRDataAccess.DataAccess
                     dbLoginInfo.UserID = user.u.UserID;
                     dbLoginInfo.UserDlpName = user.e.FullName;
                     dbLoginInfo.Password = password;
+                    dbLoginInfo.EmployeeID = user.u.EmployeeID;
 
                     return dbLoginInfo;
                 }

@@ -30,8 +30,8 @@ namespace HRDataAccess.Models
         public Nullable<System.DateTime> DeleteDateTime { get; set; }
         public Nullable<int> DeleteUserID { get; set; }
     
-        public virtual Employee Employee { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UsersPermission> UsersPermissions { get; set; }
+        public virtual Employee Employee { get; set; }
     }
 }

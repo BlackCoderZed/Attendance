@@ -44,6 +44,7 @@ namespace HRAttendance.Services
             loginInfo.Password = userInfo.Password;
             loginInfo.UserDlpName = userInfo.UserDlpName;
             loginInfo.LoginID = userInfo.Id;
+            loginInfo.EmployeeID = userInfo.EmployeeID;
 
             return loginInfo;
         }

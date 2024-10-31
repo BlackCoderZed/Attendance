@@ -6,13 +6,17 @@
     <edmx:Diagrams>
       <Diagram DiagramId="03fc82182f8446a2bb0c78f42b0c3174" Name="Diagram1" ZoomLevel="68">
         <EntityTypeShape EntityType="Models.Setting" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Models.Employee" Width="1.5" PointX="0.75" PointY="3.875" />
         <EntityTypeShape EntityType="Models.Permission" Width="1.5" PointX="3" PointY="1" />
         <EntityTypeShape EntityType="Models.UsersPermission" Width="1.5" PointX="5.25" PointY="4.875" />
         <AssociationConnector Association="Models.FK_UsersPermissions_Permissions" />
         <EntityTypeShape EntityType="Models.User" Width="1.5" PointX="3" PointY="4.125" />
-        <AssociationConnector Association="Models.FK_Users_Employees" />
         <AssociationConnector Association="Models.FK_UsersPermissions_Users" />
+        <EntityTypeShape EntityType="Models.Attendance" Width="1.5" PointX="3" PointY="8.5" />
+        <EntityTypeShape EntityType="Models.Employee" Width="1.5" PointX="0.75" PointY="3.625" />
+        <EntityTypeShape EntityType="Models.Shift" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="Models.FK_Attendances_Employees" />
+        <AssociationConnector Association="Models.FK_Employees_Shift" />
+        <AssociationConnector Association="Models.FK_Users_Employees" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Attendances">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="CheckInTime" Type="time" Precision="7" />
+    <Property Name="CheckOutTime" Type="time" Precision="7" />
+    <Property Name="Status" Type="tinyint" />
+  </EntityType>
   <EntityType Name="Employees">
     <Key>
       <PropertyRef Name="ID" />
@@ -17,6 +28,7 @@
     <Property Name="DeleteDateTime" Type="datetime" />
     <Property Name="LastUpdateUserID" Type="int" />
     <Property Name="LastUpdateDateTime" Type="datetime" />
+    <Property Name="ShiftID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Permissions">
     <Key>
@@ -33,6 +45,15 @@
     <Property Name="IntValue" Type="int" />
     <Property Name="StrVal" Type="varchar" MaxLength="50" />
     <Property Name="FloatVal" Type="float" />
+  </EntityType>
+  <EntityType Name="Shift">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShiftName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="EndTime" Type="time" Precision="7" Nullable="false" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
@@ -56,6 +77,30 @@
     <Property Name="UserID" Type="int" Nullable="false" />
     <Property Name="PermissionID" Type="int" Nullable="false" />
   </EntityType>
+  <Association Name="FK_Attendances_Employees">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Attendances" Type="Self.Attendances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Attendances">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_Shift">
+    <End Role="Shift" Type="Self.Shift" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shift">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="ShiftID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Users_Employees">
     <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
     <End Role="Users" Type="Self.Users" Multiplicity="*" />
@@ -93,11 +138,21 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="ModelsStoreContainer">
+    <EntitySet Name="Attendances" EntityType="Self.Attendances" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Permissions" EntityType="Self.Permissions" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Settings" EntityType="Self.Settings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Shift" EntityType="Self.Shift" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UsersPermissions" EntityType="Self.UsersPermissions" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Attendances_Employees" Association="Self.FK_Attendances_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Attendances" EntitySet="Attendances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Shift" Association="Self.FK_Employees_Shift">
+      <End Role="Shift" EntitySet="Shift" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
     <AssociationSet Name="FK_Users_Employees" Association="Self.FK_Users_Employees">
       <End Role="Employees" EntitySet="Employees" />
       <End Role="Users" EntitySet="Users" />

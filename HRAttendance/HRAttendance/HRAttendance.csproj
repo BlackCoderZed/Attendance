@@ -119,6 +119,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -127,6 +128,11 @@
     </Compile>
     <Compile Include="Models\Account\LoginUserInfo.cs" />
     <Compile Include="Models\Account\Response\ResUserLoginInfo.cs" />
+    <Compile Include="Models\Attendance\EmpEmployeeAttendanceInfo.cs" />
+    <Compile Include="Models\Attendance\Request\ReqAttendanceSetInfo.cs" />
+    <Compile Include="Models\Attendance\Response\ResCheckInOutInfo.cs" />
+    <Compile Include="Models\Attendance\Response\ResGetCheckInOutInfo.cs" />
+    <Compile Include="Models\Attendance\Response\ResGetEmpAttenanceInfoList.cs" />
     <Compile Include="Models\Common\DBConfiguration.cs" />
     <Compile Include="Models\Common\GridviewFilterInfo.cs" />
     <Compile Include="Models\Common\GridviewJsonResponse.cs" />
@@ -139,6 +145,9 @@
     <Compile Include="Models\Employee\Response\ResDeleteEmployeeInfo.cs" />
     <Compile Include="Models\Employee\Response\ResGetEmployeeInfocs.cs" />
     <Compile Include="Models\Employee\Response\ResGetEmployeeInfoList.cs" />
+    <Compile Include="Models\Role\Response\ResUserRoleInfo.cs" />
+    <Compile Include="Models\Shift\ShiftInfo.cs" />
+    <Compile Include="Models\UserRoleProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Common\Common.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -156,8 +165,10 @@
       <DependentUpon>EmployeeRex.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\AccountServices.cs" />
+    <Compile Include="Services\AttendanceServices.cs" />
     <Compile Include="Services\BaseServices.cs" />
     <Compile Include="Services\EmployeeServices.cs" />
+    <Compile Include="Services\RoleServices.cs" />
     <Compile Include="Utils\CommonEnums.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\DataAccessHelper.cs" />
@@ -511,6 +522,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\Site\attendance-view.js" />
     <Content Include="Scripts\Site\common.js" />
     <Content Include="Scripts\Site\emolpyee-list-view.js" />
     <Content Include="Scripts\Site\employee-reg-dlg.js" />
@@ -531,6 +543,7 @@
     <Content Include="Views\Employee\_GridviewEmployeeListView.cshtml" />
     <Content Include="Views\Shared\_JSResourcesPartialView.cshtml" />
     <Content Include="Views\Employee\EmployeeRegisterDlg.cshtml" />
+    <Content Include="Views\Attendance\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Base\" />

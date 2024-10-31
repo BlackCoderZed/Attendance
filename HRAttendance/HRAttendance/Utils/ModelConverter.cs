@@ -1,8 +1,13 @@
-﻿using HRAttendance.Models.Common;
+﻿using HRAttendance.Models.Attendance;
+using HRAttendance.Models.Common;
 using HRAttendance.Models.Employee;
 using HRAttendance.Models.Employee.Request;
+using HRAttendance.Models.Shift;
+using HRCommon.Utils;
+using HRDataAccess.Models.AttendanceModels;
 using HRDataAccess.Models.Common;
 using HRDataAccess.Models.EmployeeModels;
+using HRDataAccess.Models.ShiftModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +17,26 @@ namespace HRAttendance.Utils
 {
     public class ModelConverter
     {
+        internal static List<EmpEmployeeAttendanceInfo> ConvertUIEmpAttendanceInfoList(List<EmpEmployeeAttendanceDBInfo> dbInfoList)
+        {
+            List<EmpEmployeeAttendanceInfo> attenInfoList = new List<EmpEmployeeAttendanceInfo>();
+
+            foreach (var dbInfo in dbInfoList)
+            {
+                EmpEmployeeAttendanceInfo info = new EmpEmployeeAttendanceInfo();
+                info.AttendanceID = dbInfo.AttendanceID;
+                info.EmployeeName = dbInfo.EmployeeName;
+                info.AttendType = Enum.GetName(typeof(eAttendance), dbInfo.AttendType);
+                info.Date = dbInfo.Date.ToString("dd-MM-yyyy");
+                info.CheckInTime = dbInfo.CheckInTime.HasValue ? dbInfo.CheckInTime.Value.ToString(@"hh\:mm\:ss") : string.Empty;
+                info.CheckOutTime = dbInfo.CheckOutTime.HasValue ? dbInfo.CheckOutTime.Value.ToString(@"hh\:mm\:ss") : string.Empty;
+
+                attenInfoList.Add(info);
+            }
+
+            return attenInfoList;
+        }
+
         internal static EmployeeCreateDBInfo CreateDBCreateEmployeeInfo(EmployeeCreateInfo model)
         {
             EmployeeCreateDBInfo info = new EmployeeCreateDBInfo();
@@ -32,6 +57,7 @@ namespace HRAttendance.Utils
             info.UserID = model.UserID;
             info.Password = model.Password;
             info.IsUpdate = model.IsUpdate;
+            info.ShiftID = model.ShiftID;
 
             info.Permissions = new List<int>();
 
@@ -78,6 +104,7 @@ namespace HRAttendance.Utils
             employeeInfo.Address = employeeDbInfo.Address;
             employeeInfo.UserIDVal = employeeDbInfo.UserIDVal;
             employeeInfo.UserID = employeeDbInfo.UserID;
+            employeeInfo.ShiftID = employeeDbInfo.ShiftID;
             employeeInfo.Password = Constants.DEFAULT_PASSWORD;
 
             if (employeeDbInfo.Permissions == null)
@@ -113,6 +140,24 @@ namespace HRAttendance.Utils
             }
 
             return infoList;
+        }
+
+        internal static List<ShiftInfo> CreateUIShiftList(List<ShiftDbInfo> shiftDbInfos)
+        {
+            List<ShiftInfo> lst = new List<ShiftInfo>();
+
+            if (shiftDbInfos == null)
+            {
+                return lst;
+            }
+
+            lst = shiftDbInfos.Select(S => new ShiftInfo()
+                                {
+                                    ShiftId = S.ShiftId,
+                                    ShiftName = S.ShiftName,
+                                }).ToList();
+
+            return lst;
         }
     }
 }

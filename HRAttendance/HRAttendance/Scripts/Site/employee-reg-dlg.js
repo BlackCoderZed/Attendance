@@ -125,6 +125,7 @@
             Gender: $("input[name='Gender']:checked").val(),
             IsUpdate: $('#EmployeeRegisterDlg #IsUpdate').val(),
             UserIDVal: $('#EmployeeRegisterDlg #UserIDVal').val(),
+            ShiftID: $('#EmployeeRegisterDlg #ShiftID').val(),
             IsManagementPermission: $('#EmployeeRegisterDlg #IsManagementPermission').prop('checked')
         }
 

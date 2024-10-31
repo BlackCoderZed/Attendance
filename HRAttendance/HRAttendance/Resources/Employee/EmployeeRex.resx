@@ -165,4 +165,7 @@
   <data name="LB_EMPLOYEE" xml:space="preserve">
     <value>Employee</value>
   </data>
+  <data name="LB_Shift" xml:space="preserve">
+    <value>Shift</value>
+  </data>
 </root>

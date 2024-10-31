@@ -12,6 +12,7 @@ using System.Web.Mvc;
 
 namespace HRAttendance.Controllers
 {
+    [Authorize(Roles = Constants.ManagementPermissionName)]
     public class EmployeeController : BaseController
     {
         // GET: Employee

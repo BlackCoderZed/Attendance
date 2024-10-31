@@ -30,6 +30,8 @@ namespace HRDataAccess.Models.EmployeeModels
 
         public int UserIDVal { get; set; }
 
+        public int ShiftID { get; set; }
+
         public List<int> Permissions { get; set; }
     }
 }

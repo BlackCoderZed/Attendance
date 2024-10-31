@@ -23,4 +23,5 @@ namespace HRAttendance.Utils
         Female,
         Other
     }
+
 }

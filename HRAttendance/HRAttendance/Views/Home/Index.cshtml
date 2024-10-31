@@ -6,14 +6,18 @@
 
 <main>
     <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-            <a href="@Url.Action("Index", "Employee")" readonly="true">
-                <figure>
-                    <img alt="EDID" src="~/Content/Images/employees.png" class="home-icon" />
-                    <figcaption>Employee Management</figcaption>
-                </figure>
-            </a>
-        </div>
+        @if (User.IsInRole(HRAttendance.Utils.Constants.ManagementPermissionName)) 
+        {
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                <a href="@Url.Action("Index", "Employee")" readonly="true">
+                    <figure>
+                        <img alt="EDID" src="~/Content/Images/employees.png" class="home-icon" />
+                        <figcaption>Employee Management</figcaption>
+                    </figure>
+                </a>
+            </div>
+        }
+        
         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
             <a href="@Url.Action("Index", "Attendance")" readonly="true">
                 <figure>
@@ -38,19 +42,6 @@
                 </figure>
             </a>
         </div>
-        @{
-            if (User.IsInRole(HRAttendance.Utils.Constants.ManagementPermissionName))
-            {
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <a href="@Url.Action("Index", "Users")" readonly="true">
-                        <figure>
-                            <img alt="User" src="~/Content/user.png" class="home-icon" />
-                            <figcaption>User Management</figcaption>
-                        </figure>
-                    </a>
-                </div>
-            }
-        }
-
+        
     </div>
 </main>

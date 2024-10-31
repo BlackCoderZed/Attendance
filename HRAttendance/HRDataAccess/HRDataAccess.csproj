@@ -55,11 +55,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessManager.cs" />
+    <Compile Include="DataAccess\AttendanceDao.cs" />
     <Compile Include="DataAccess\BaseDao.cs" />
     <Compile Include="DataAccess\EmployeeDao.cs" />
+    <Compile Include="DataAccess\RoleDao.cs" />
+    <Compile Include="DataAccess\ShiftDao.cs" />
     <Compile Include="DataAccess\UserDao.cs" />
     <Compile Include="IQueryableExtensions.cs" />
     <Compile Include="Models\Account\DbLoginUserInfo.cs" />
+    <Compile Include="Models\Attendance.cs">
+      <DependentUpon>HREntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AttendanceModels\EmpEmployeeAttendanceDBInfo.cs" />
     <Compile Include="Models\Common\DBGridviewFilterInfo.cs" />
     <Compile Include="Models\Employee.cs">
       <DependentUpon>HREntities.tt</DependentUpon>
@@ -87,6 +94,10 @@
     <Compile Include="Models\Setting.cs">
       <DependentUpon>HREntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Shift.cs">
+      <DependentUpon>HREntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShiftModels\ShiftDbInfo.cs" />
     <Compile Include="Models\User.cs">
       <DependentUpon>HREntities.tt</DependentUpon>
     </Compile>

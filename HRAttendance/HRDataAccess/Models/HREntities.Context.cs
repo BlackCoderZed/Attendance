@@ -31,9 +31,11 @@ namespace HRDataAccess.Models
         }
     
         public virtual DbSet<Setting> Settings { get; set; }
-        public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Permission> Permissions { get; set; }
         public virtual DbSet<UsersPermission> UsersPermissions { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Attendance> Attendances { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Shift> Shifts { get; set; }
     }
 }

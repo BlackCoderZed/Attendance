@@ -17,6 +17,7 @@ namespace HRDataAccess.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Employee()
         {
+            this.Attendances = new HashSet<Attendance>();
             this.Users = new HashSet<User>();
         }
     
@@ -33,7 +34,11 @@ namespace HRDataAccess.Models
         public Nullable<System.DateTime> DeleteDateTime { get; set; }
         public Nullable<int> LastUpdateUserID { get; set; }
         public Nullable<System.DateTime> LastUpdateDateTime { get; set; }
+        public int ShiftID { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Attendance> Attendances { get; set; }
+        public virtual Shift Shift { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> Users { get; set; }
     }

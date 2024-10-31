@@ -194,7 +194,16 @@ namespace HRAttendance.Resources.Employee {
                 return ResourceManager.GetString("LB_RegistDate", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Shift.
+        /// </summary>
+        public static string LB_Shift {
+            get {
+                return ResourceManager.GetString("LB_Shift", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to User ID.
         /// </summary>

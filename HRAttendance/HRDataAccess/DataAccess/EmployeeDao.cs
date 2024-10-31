@@ -85,6 +85,7 @@ namespace HRDataAccess.DataAccess
                 employee.Email = dbInfo.Email;
                 employee.Gender = dbInfo.Gender;
                 employee.Address = dbInfo.Address;
+                employee.ShiftID = dbInfo.ShiftID;
 
                 if (!dbInfo.IsUpdate)
                 {
@@ -338,7 +339,8 @@ namespace HRDataAccess.DataAccess
                             Address = S.e.Address,
                             UserID = S.u.UserID,
                             UserIDVal = S.u.ID,
-                            Password = S.u.Password
+                            Password = S.u.Password,
+                            ShiftID = S.e.ShiftID
                         }).FirstOrDefault();
 
                     if (employeeDBInfo == null)
